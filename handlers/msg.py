@@ -1,10 +1,10 @@
-from aiogram.types import Message
 from aiogram import Router, F
+from aiogram.types import Message
 
 from core.elements.markups import Markups
 from core.elements.templates import Templates
-from core.user import User
 from core.log import Log
+from core.user import User
 
 msg_control = Router()
 msg_control.name = "msg_control"

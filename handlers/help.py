@@ -1,10 +1,10 @@
-from aiogram.types import Message
-from aiogram.filters import Command
 from aiogram import Router, F
+from aiogram.filters import Command
+from aiogram.types import Message
 
 from core.elements.templates import Templates
-from core.user import User
 from core.log import Log
+from core.user import User
 
 help_command = Router()
 help_command.name = "help"

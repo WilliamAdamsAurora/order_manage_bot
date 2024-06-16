@@ -1,9 +1,8 @@
+from aiogram import Router
+from aiogram.filters import Command
 from aiogram.types import Message
-from aiogram.filters import Command, CommandObject
-from aiogram import Router, F
 
 from core.elements.markups import Markups
-from core.elements.templates import Templates
 from core.order import Order
 
 order_command = Router()

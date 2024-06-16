@@ -1,13 +1,10 @@
-import os
-
 import pymysql
 import yaml
-from loguru import logger
 from icecream import ic
+from loguru import logger
 
 from core.elements.templates import Templates
 from core.log import Log
-from core.singlton import singleton
 
 log = Log()
 

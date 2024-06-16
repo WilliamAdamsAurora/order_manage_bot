@@ -1,13 +1,13 @@
-from aiogram.fsm.state import StatesGroup, State
-from aiogram.fsm.context import FSMContext
-from aiogram.types import Message
-from aiogram.filters import Command
 from aiogram import Router, F
+from aiogram.filters import Command
+from aiogram.fsm.context import FSMContext
+from aiogram.fsm.state import StatesGroup, State
+from aiogram.types import Message
 
-from core.elements.markups import base_markup
-from core.user import User
 from core import Core
+from core.elements.markups import base_markup
 from core.log import Log
+from core.user import User
 
 login_command = Router()
 login_command.name = "login"

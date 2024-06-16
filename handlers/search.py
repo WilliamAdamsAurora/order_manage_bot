@@ -1,12 +1,10 @@
-from aiogram.types import Message, Location
 from aiogram import Router, F
-from icecream import ic
+from aiogram.types import Message, Location
 from loguru import logger
 
-from core import Core, utils
 from core.elements.markups import Markups
-from core.user import User
 from core.locator import Locator
+from core.user import User
 
 search_command = Router()
 search_command.name = "search"

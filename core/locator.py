@@ -1,11 +1,10 @@
-import requests
-from urllib.parse import urlencode
 from functools import lru_cache
+from urllib.parse import urlencode
 
+import requests
 from LxmlSoup import LxmlSoup
 from geopy import Nominatim
 from loguru import logger
-
 
 logger.add("logs/locator.log", format="\n{time} {level} \n{message}\n",
            level="DEBUG", rotation="10 MB", compression="zip")

@@ -1,17 +1,17 @@
 import aiogram.exceptions
+from aiogram import Router, F, types
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import StatesGroup, State
 from aiogram.types import Message
-from aiogram import Router, F, types
 from icecream import ic
 
-from core import utils, Core, Database
+from core import Core
+from core.elements.markups import Markups
 from core.elements.templates import Templates
 from core.locator import Locator
-from core.order import Order
-from core.elements.markups import Markups
-from core.user import User
 from core.log import Log
+from core.order import Order
+from core.user import User
 
 creater = Router()
 creater.name = "creater"

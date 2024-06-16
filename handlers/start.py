@@ -1,13 +1,12 @@
+from aiogram import Router, F
+from aiogram.filters import CommandStart
 from aiogram.fsm.context import FSMContext
 from aiogram.types import Message
-from aiogram.filters import CommandStart
-from aiogram import Router, F
-from loguru import logger
 
-from core.elements.templates import Templates
-from core.user import User
 from core.elements.markups import base_markup, Markups
+from core.elements.templates import Templates
 from core.log import Log
+from core.user import User
 
 start_command = Router()
 start_command.name = "start"

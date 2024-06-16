@@ -5,8 +5,8 @@ from loguru import logger
 
 from core import utils
 from core.database import Database
-from core.locator import Locator
 from core.elements.templates import Templates
+from core.locator import Locator
 
 logger.add("logs/orders.log", format="\n{time} {level} \n{message}\n",
            level="DEBUG", rotation="10 MB", compression="zip")

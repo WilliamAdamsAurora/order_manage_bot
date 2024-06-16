@@ -1,11 +1,11 @@
-from aiogram.types import Message
-from aiogram.filters import Command
 from aiogram import Router
+from aiogram.filters import Command
+from aiogram.types import Message
 
 from core import Core
 from core.elements.markups import Markups
-from core.user import User
 from core.log import Log
+from core.user import User
 
 remove_group_command = Router()
 remove_group_command.name = "remove group"

@@ -1,0 +1,8 @@
+/cache/
+/testing/
+/logs/
+/.venv/
+/core//__pycache__
+/core/elements/__pycache__
+/handlers/__pycache__
+.idea/

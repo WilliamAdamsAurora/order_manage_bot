@@ -1,0 +1,6 @@
+version: 0.4
+database:
+  name:
+  host:
+  username:
+  password:
